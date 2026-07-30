@@ -33,26 +33,26 @@
 <li><strong>User-entered log data.</strong> Procedure names, dates, codes, locations, supervision levels, outcomes, notes, and any identifiers or patient-related details you choose to enter.</li>
 </ul>
 <p>ProcLog does <strong>not</strong> collect account credentials, email addresses, passwords, analytics, advertising identifiers, or device diagnostics. The App contains no analytics SDK, no crash-reporting SDK, and no advertising library of any kind.</p>
-<p>All of the information above is stored locally on your device using iOS's on-device storage. If you are signed into iCloud on your device, ProcLog additionally stores an encrypted backup of this same information in <strong>your own personal iCloud account</strong>, using Apple's iCloud infrastructure, so your data can be restored if you get a new device. That backup is created directly by your device communicating with Apple's iCloud service — it never passes through, or becomes visible to, C.A.R.E. or ProcLog's developer.</p>
-<p><strong>Subscription and purchase information.</strong> If you subscribe to ProcLog Pro, the purchase transaction is handled entirely by Apple through the App Store's in-app purchase system. ProcLog receives only a purchase/entitlement status (subscribed or not) from Apple's StoreKit framework, used solely to unlock unlimited logging — it never receives your name, email, or payment/card details, because Apple never shares those with the app. Apple's own handling of your payment information is governed by Apple's Privacy Policy, not this one.</p>
+<p>All of the information above is stored locally on your device using your operating system's on-device storage. If you enable cloud backup, ProcLog additionally stores a backup of this same information in <strong>your own personal cloud account</strong> — your iCloud account on iOS, or your Google Drive account on Android — so your data can be restored if you get a new device. On Android this is optional and requires you to connect a Google account explicitly; the backup is written to a private application folder in your Drive, not to your visible Drive files. In either case the backup is created directly by your device communicating with Apple's or Google's service — it never passes through, or becomes visible to, C.A.R.E. or ProcLog's developer.</p>
+<p><strong>Subscription and purchase information.</strong> If you subscribe to ProcLog Pro, the purchase transaction is handled entirely by your platform's app store — Apple's App Store on iOS, or Google Play on Android — through that store's in-app purchase system. ProcLog receives only a purchase/entitlement status (subscribed or not) from the platform's in-app purchase framework (Apple StoreKit or Google Play Billing), used solely to unlock unlimited logging — it never receives your name, email, or payment/card details, because neither store shares those with the app. Apple's or Google's own handling of your payment information is governed by their respective privacy policies, not this one.</p>
 
 <h2>2. How This Information Is Used</h2>
 <p>Because ProcLog has no server and no account system, information is used exclusively to:</p>
 <ul>
 <li>display, organize, and search your own procedure logs, on your own device;</li>
 <li>generate PDF/CSV exports at your explicit request;</li>
-<li>back up and restore your data via your own iCloud account, if enabled;</li>
+<li>back up and restore your data via your own cloud account (iCloud or Google Drive), if enabled;</li>
 <li>schedule optional local reminder notifications on your device;</li>
-<li>unlock unlimited procedure logging once Apple confirms an active ProcLog Pro subscription.</li>
+<li>unlock unlimited procedure logging once the App Store or Google Play confirms an active ProcLog Pro subscription.</li>
 </ul>
 <p>ProcLog does not use your information for advertising, does not build profiles about you, and does not use your information to train any model.</p>
 
 <h2>3. How Information Is Shared</h2>
 <p>ProcLog does not sell information, and there is no third party for us to share it with — we do not operate servers that receive your data in the first place. Specifically:</p>
 <ul>
-<li><strong>No service providers receive your log data.</strong> ProcLog does not use analytics vendors, advertising networks, or third-party cloud hosting for your log data. The only infrastructure involved is Apple's own iCloud (for backup) and Apple's own StoreKit in-app purchase system (for subscriptions), both acting under your Apple ID and governed by Apple's own privacy terms — not a vendor relationship of ours.</li>
-<li><strong>User-directed sharing only.</strong> When you export or share a report, that file is generated on your device and shared only through the iOS share sheet, to a destination you personally choose (e.g. AirDrop, email, a file you save). We have no visibility into, or control over, what you do with an exported file.</li>
-<li><strong>Legal and safety reasons.</strong> Because ProcLog holds no copy of your data, we would generally have nothing to produce in response to a legal request directed at us — your data lives on your device and in your own iCloud account, both under your control.</li>
+<li><strong>No service providers receive your log data.</strong> ProcLog does not use analytics vendors, advertising networks, or third-party cloud hosting for your log data. The only infrastructure involved is your own platform's cloud backup (Apple iCloud or Google Drive) and your own platform's in-app purchase system (Apple StoreKit or Google Play Billing), both acting under your own Apple ID or Google Account and governed by Apple's or Google's own privacy terms — not a vendor relationship of ours.</li>
+<li><strong>User-directed sharing only.</strong> When you export or share a report, that file is generated on your device and shared only through your operating system's share sheet, to a destination you personally choose (e.g. email, a messaging app, or a file you save). We have no visibility into, or control over, what you do with an exported file.</li>
+<li><strong>Legal and safety reasons.</strong> Because ProcLog holds no copy of your data, we would generally have nothing to produce in response to a legal request directed at us — your data lives on your device and in your own cloud account, both under your control.</li>
 </ul>
 
 <h2>4. Sensitive and Patient-Related Information</h2>
@@ -60,20 +60,20 @@
 <p>ProcLog is not represented as a covered entity, healthcare provider, electronic health record, or hospital credentialing platform, and is not provided on behalf of a hospital, clinic, health system, health plan, or other covered entity unless expressly stated otherwise in a separate written agreement.</p>
 
 <h2>5. Data Retention</h2>
-<p>Your log data remains on your device until you delete it, delete the app, or use the in-app "Delete account &amp; data" feature. If iCloud backup is enabled, a copy also persists in your personal iCloud account until you delete it — either via "Delete account &amp; data" in the app, or directly in iOS Settings under your Apple ID's iCloud storage management. C.A.R.E. retains none of your log data anywhere, at any time, because it never reaches us.</p>
+<p>Your log data remains on your device until you delete it, delete the app, or use the in-app "Delete account &amp; data" feature. If cloud backup is enabled, a copy also persists in your personal cloud account until you delete it — either via "Delete account &amp; data" in the app, or directly through your platform's own storage management (iCloud storage settings under your Apple ID on iOS, or your Google Account's app-data management on Android). C.A.R.E. retains none of your log data anywhere, at any time, because it never reaches us.</p>
 
 <h2>6. Data Security</h2>
 <p>ProcLog applies security measures appropriate for sensitive clinical information, including:</p>
 <ul>
-<li>on-device-only storage, protected by iOS's platform-level encryption;</li>
-<li>an optional biometric App Lock (Face ID/Touch ID), handled entirely by Apple's on-device Secure Enclave — biometric data never leaves your device and is never accessible to ProcLog;</li>
+<li>on-device-only storage, protected by your operating system's platform-level encryption;</li>
+<li>an optional biometric App Lock (Face ID/Touch ID on iOS, fingerprint or face unlock on Android), handled entirely by your device's secure hardware — Apple's Secure Enclave or the Android Keystore — so biometric data never leaves your device and is never accessible to ProcLog;</li>
 <li>an on-screen privacy mode to obscure sensitive fields from view;</li>
-<li>iCloud backup secured under Apple's own encryption and account-security infrastructure.</li>
+<li>cloud backup secured under Apple's or Google's own encryption and account-security infrastructure.</li>
 </ul>
 <p>No method of storage is completely immune to risk, and we cannot guarantee absolute security of a device that is lost, stolen, or compromised — enabling a device passcode and App Lock is strongly recommended.</p>
 
 <h2>7. Your Choices and Controls</h2>
-<p>Because your data lives on your device and in your own iCloud account, you have direct, immediate control over it at all times — no request to us is required. Within the app you can view, edit, export, and permanently delete your data, including a full "Delete account &amp; data" action that removes both the on-device copy and the iCloud backup. For general questions, you may still contact us using the information in Section 11.</p>
+<p>Because your data lives on your device and in your own cloud account, you have direct, immediate control over it at all times — no request to us is required. Within the app you can view, edit, export, and permanently delete your data, including a full "Delete account &amp; data" action that removes both the on-device copy and the cloud backup. For general questions, you may still contact us using the information in Section 11.</p>
 
 <h2>8. Children's Privacy</h2>
 <p>ProcLog is intended for licensed medical professionals, trainees, and adult healthcare professionals, and is not directed at children under 13. We do not knowingly collect information from children.</p>
