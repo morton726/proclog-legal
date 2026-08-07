@@ -3,16 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ProcLog Legal</title>
+<title>ProcLog — Procedure Logbook for Clinicians</title>
+<meta name="description" content="ProcLog is a private procedure logbook for clinicians. Record the procedures you perform, track them toward credentialing, and export a clean PDF or CSV whenever you need one.">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 480px; margin: 80px auto; padding: 0 20px; color: #1c1c1e; }
-  h1 { font-size: 22px; }
-  a { display: block; padding: 14px 16px; margin: 10px 0; background: #f2f2f7; border-radius: 10px; color: #0A84FF; text-decoration: none; font-weight: 600; }
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 56px 22px 80px;
+    line-height: 1.65; color: #1c1c1e; background: #fff;
+  }
+  header { margin-bottom: 40px; }
+  h1 { font-size: 34px; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .tagline { font-size: 19px; color: #3a3a3c; margin: 0 0 4px; }
+  .by { font-size: 14px; color: #6e6e73; margin: 0; }
+  h2 { font-size: 19px; margin: 40px 0 12px; }
+  p, li { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  .lede { font-size: 17px; }
+  .callout {
+    background: #f2f2f7; border-radius: 12px; padding: 18px 20px;
+    margin: 28px 0; font-size: 15px;
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 28px 0 0; }
+  .links a {
+    padding: 12px 18px; background: #f2f2f7; border-radius: 10px;
+    color: #0A64D6; text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .links a:hover { background: #e5e5ea; }
+  footer {
+    margin-top: 56px; padding-top: 22px; border-top: 1px solid #e5e5ea;
+    font-size: 14px; color: #6e6e73;
+  }
+  footer a { color: #0A64D6; }
+  address { font-style: normal; display: inline; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #f2f2f7; background: #000; }
+    .tagline { color: #c7c7cc; }
+    .by, footer { color: #98989d; }
+    .callout, .links a { background: #1c1c1e; }
+    .links a:hover { background: #2c2c2e; }
+    .links a, footer a { color: #4da2ff; }
+    footer { border-top-color: #2c2c2e; }
+  }
 </style>
 </head>
 <body>
-<h1>ProcLog</h1>
-<a href="privacy.html">Privacy Policy</a>
-<a href="terms.html">Terms of Use</a>
+
+<header>
+  <h1>ProcLog</h1>
+  <p class="tagline">A private procedure logbook for clinicians.</p>
+  <p class="by">Published by C.A.R.E.</p>
+</header>
+
+<p class="lede">ProcLog is a mobile app for individual medical providers, clinicians, and trainees who need to keep their own record of the procedures they have performed. You log a procedure in a few seconds, and ProcLog keeps a running count you can hand to a credentialing office, a program director, or a licensing board.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li><strong>Log procedures quickly</strong> — pick from a built-in list or add your own custom procedures, with notes, dates, and outcomes.</li>
+  <li><strong>Track toward credentialing</strong> — see running totals per procedure type, and pin the ones you are actively working toward.</li>
+  <li><strong>Export on demand</strong> — generate a formatted PDF or a CSV whenever you need documentation.</li>
+  <li><strong>Optional cloud backup</strong> — back up your log to your own iCloud account on iOS, or your own Google Drive on Android, so your records survive a lost or replaced device.</li>
+  <li><strong>Lock it down</strong> — an optional biometric App Lock (Face ID or Touch ID on iOS, fingerprint or face unlock on Android) keeps your log private on a shared or misplaced device.</li>
+</ul>
+
+<h2>Your data stays yours</h2>
+<p>ProcLog has no accounts, no login, and no server. Everything you enter is stored on your own device. If you turn on cloud backup, the backup goes to <em>your</em> personal cloud account and nowhere else — on Android it is written to a private application folder that the app cannot use to read the rest of your Drive.</p>
+
+<div class="callout">
+  <strong>Nothing is sent to the developer.</strong> ProcLog contains no analytics, no advertising, and no tracking libraries. We never receive, store, or have access to your log data. You can delete everything — on-device data and cloud backup together — at any time from within the app.
+</div>
+
+<h2>Free and Pro</h2>
+<p>ProcLog is free to use, including full export, unlimited custom procedures, and cloud backup. A ProcLog Pro subscription removes the cap on how many procedures you can log. Everything you have already logged remains viewable and editable whether or not you subscribe.</p>
+
+<h2>Availability</h2>
+<p>ProcLog is available for iPhone on the App Store and for Android on Google Play.</p>
+
+<div class="links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+  <a href="delete-data.html">Delete Your Data</a>
+</div>
+
+<footer>
+  <p><strong>Support</strong><br>
+  <a href="mailto:CareAPPsupport@csu-als.org">CareAPPsupport@csu-als.org</a></p>
+  <p>ProcLog is published by C.A.R.E.<br>
+  <address>1208 Victoria Crossing, Festus, MO 63028</address></p>
+  <p>ProcLog is a personal recordkeeping tool. It is not an electronic health record, not a credentialing platform, and is not intended to store protected health information.</p>
+</footer>
+
 </body>
 </html>
